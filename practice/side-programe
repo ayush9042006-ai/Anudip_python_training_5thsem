@@ -1,0 +1,18 @@
+side1 = int(input("Enter side 1...: "))
+if side1 < 0:
+    print("traingle cannot be formed.")
+    exit()
+
+side2 = int(input("Enter side2=..: "))
+if side2 < 0:
+    print("triangle cannot be formed.")
+    exit()
+side3 = int(input("Enter side3...: "))
+if side3 < 0:
+    print("triangle cannot be formed")
+    exit()
+
+if(side1+side2>side3 and side1+side3>side2 and side2+side3>side1):
+    print("triangle is formed")
+else:
+    print("triangle is not formed")

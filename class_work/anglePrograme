@@ -13,7 +13,14 @@ if angle3 <= 0:
     exit()
 
 if ((angle1+angle2+angle3)==180):
-    print("triangle is formed.....")
+    
+    if(angle1 < 90 and angle2 < 90 and angle3 < 90):
+        print("triangle is acute angle.....")
+    elif(angle1 == 90 or angle2 == 90 or angle3 == 90):
+        print("triangle is right angle.....")
+    else:
+        print("triangle is obtuse.....")
+
 
 else:
     print("triangle is not formed.....")

@@ -10,7 +10,7 @@ if rate < 0:
     print("Rate of interest cannot be negative.")
     exit()
 
-time = float(input("Enter Time (years): "))
+time = int(input("Enter Time (years): "))
 if time < 0:
     print("Time cannot be negative.")
     exit()

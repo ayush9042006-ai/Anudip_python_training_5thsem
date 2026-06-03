@@ -1,0 +1,21 @@
+angle1 = float(input("Enter length: "))
+if angle1 <= 0:
+    print("traingle cannot be negative.")
+    exit()
+
+angle2 = int(input("Enter width: "))
+if angle2 <= 0:
+    print("triangle cannot be negative.")
+    exit()
+angle3 = int(input("Enter length: "))
+if angle3 <= 0:
+    print("triangle cannot be formed")
+    exit()
+
+if ((angle1+angle2+angle3)==180):
+    print("triangle is formed.....")
+
+else:
+    print("triangle is not formed.....")
+
+

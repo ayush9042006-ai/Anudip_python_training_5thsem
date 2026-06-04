@@ -1,0 +1,28 @@
+
+count1=0
+absent=0
+for i in range(0,31):
+    print("enter present or absent: P AND AB")
+    y=input()
+
+    if y.lower()=="p":
+
+         print("student entered")
+         count1+=1
+         print("Attendence Count=",count1)
+    elif y.lower()=="ab":
+         print("absent",absent)
+         absent+=1
+    else:
+         print("no more entery")
+         exit()
+print("Total number of student Present",count1)
+print("total number of absent",absent)
+    
+
+
+
+
+
+
+#a teacture is record the student attendence the strenth of class is 30 every time he need to insert the present or absent count the total no. of student present in class or absent 

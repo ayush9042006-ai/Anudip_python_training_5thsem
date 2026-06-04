@@ -1,7 +1,7 @@
-
+n=int(input("enter the total no of student ...."))
 count1=0
 absent=0
-for i in range(0,31):
+for i in range(0,n+1):
     print("enter present or absent: P AND AB")
     y=input()
 

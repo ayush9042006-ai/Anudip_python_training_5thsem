@@ -12,7 +12,8 @@ if len(str(pin))==4:
       print("access Granted")
       
 else:
-   print("error in pin")
+   print("INCORRECT pin..TRY AGAIN")
+
    while(len(str(pin))!=1234):
       pin=int(input("RE-enter the pin... again"))
       if(pin==1234):

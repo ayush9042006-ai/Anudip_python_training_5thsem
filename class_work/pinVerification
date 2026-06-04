@@ -1,0 +1,27 @@
+#pin verification coe
+
+
+pin=int(input("enter the pin..."))
+if len(str(pin))==4:
+   
+   while pin !=1234:
+      print("INCORRECT pin..TRY AGAIN")
+      pin=int(input("enter the pin... again"))
+      
+   else:
+      print("access Granted")
+      
+else:
+   print("error in pin")
+   while(len(str(pin))!=1234):
+      pin=int(input("RE-enter the pin... again"))
+      if(pin==1234):
+         print("access Granted")
+         exit()
+
+      
+  
+
+   
+
+

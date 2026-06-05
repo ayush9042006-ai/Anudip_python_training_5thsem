@@ -16,4 +16,3 @@ for i in range(1, a + 1):
     total += score
 #TOTAL score
 print("Total score of all players =", total)
- 

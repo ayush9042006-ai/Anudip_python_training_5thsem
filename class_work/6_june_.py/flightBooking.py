@@ -1,4 +1,9 @@
-# Flight booking records
+#1.Display all passengers whose booking status is Confirmed.  
+#2.Count the number of passengers travelling to Delhi.  
+#3.Count Confirmed, Waiting, and Cancelled bookings separately.  
+#4.Create a list containing passenger IDs with Waiting status.
+#5.Determine which destination has the highest number of bookings.  
+
 bookings = ( ("P101", "Delhi", "Confirmed"),
     ("P102", "Mumbai", "Waiting"),
     ("P103", "Delhi", "Confirmed"),
@@ -38,7 +43,7 @@ print("confirmed....:", confirmed)
 print("waiting....:", waiting)
 print("cancelled......:", cancelled)
 
-# Task 4: Create waiting list
+# Create waiting list
 waiting = []
 
 for booking in bookings:

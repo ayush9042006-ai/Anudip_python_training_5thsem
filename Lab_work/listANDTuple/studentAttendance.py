@@ -17,7 +17,7 @@ total= len(attendance)
 per= (p/total) * 100
 print("Attendance Percentage:",per,"%")
 # Determine eligibility.......>>>>>>
-if per>= 75:
+if per>=75:
     print("Eligible for Exam.....")
 else:
     print("Not Eligible for Exam......")

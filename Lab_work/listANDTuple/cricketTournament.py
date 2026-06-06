@@ -13,4 +13,13 @@ for i in score:
         count_f+=1
 print("count of half centuries..:",count_h)
 print("count of full centuries..:",count_f)
+print(f"highest....:{max(score)}")
+# display score below than 20
+for i in score:
+    if i < 20:
+        print("score below than 20:::",i)
 
+#average of score
+a=sum(score)
+avg=a/len(score)
+print(avg)

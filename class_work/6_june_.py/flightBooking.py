@@ -34,18 +34,18 @@ for booking in bookings:
     elif booking[2] == "Cancelled":
         cancelled += 1
 
-print("\nConfirmed:", confirmed)
-print("Waiting:", waiting)
-print("Cancelled:", cancelled)
+print("confirmed:", confirmed)
+print("waiting:", waiting)
+print("cancelled:", cancelled)
 
 # Task 4: Create waiting list
-waiting_list = []
+waiting = []
 
 for booking in bookings:
     if booking[2] == "Waiting":
-        waiting_list.append(booking[0])
+        waiting.append(booking[0])
 
-print("\nWaiting List:", waiting_list)
+print("\nWaiting List:", waiting)
 
 # Task 5: Find most booked destination
 delhi = 0
@@ -67,7 +67,7 @@ elif mumbai > delhi and mumbai > chennai:
 else:
     most_booked = "Chennai"
 
-print("
+print("most booked destintion:",most_booked)
 
 
 

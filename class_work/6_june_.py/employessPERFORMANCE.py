@@ -14,7 +14,7 @@ employ=(
     ("E105","amit",45)
 
 )
-
+# display detail of employess score 80 or more.,.,
 print("employess score 80 or above.....")
 for i in employ:
     if i[2] >=80:
@@ -54,11 +54,11 @@ for emp in employ:
     score = emp[2]
 
     if score >= 90:
-        category="Excellent"
+        category="excellent"
     elif score>=75:
-        category="Good"
+        category="good"
     elif score>=60:
-        category = "Average"
+        category ="average"
     else:
-        category = "Needs Improvement"
+        category = "Needsimprovement"
     print(name, ".....>", category)

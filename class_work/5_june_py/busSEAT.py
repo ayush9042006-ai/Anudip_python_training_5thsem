@@ -8,9 +8,8 @@ for i in seat:
     if i==1:
         count_book+=1
     else:
-        count_A+=1
-
-
+         count_A+=1
+#display the result.........................
 print(f"BOOKED SEAT......{count_book}")
 print(f"avialable seat......{count_A}")
 
@@ -20,10 +19,10 @@ for i in range(len(seat)):
     if seat[i] == 0:
         print(f"First available seat = {i+1}")
         break
-# Find all available seat numbers
-print("Available seat numbers:")
-
+# Find all available seat numbers......................................
 for i in range(len(seat)):
     if seat[i] == 0:
         avialable.append(i+1)
-print(avialable)
+
+print(f"Available seat numbers{avialable}:")
+

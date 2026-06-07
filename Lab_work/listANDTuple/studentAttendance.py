@@ -27,3 +27,6 @@ print("Absent on Days....:")
 for i in range(len(attendance)):
     if attendance[i] == 'A':
         print(i + 1)
+
+
+    

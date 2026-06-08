@@ -54,25 +54,24 @@ total = sum(units.values())
 print("Total units consumed:", total)
 
 # 5. Create lists
-low = []
-medium= []
-high = []
+low =[]
+medium=[]
+high =[]
 
-for house in units:
-    if units[house] < 200:
-        low.append(house)
-    elif units[house] <= 400:
-        medium.append(house)
+for i in units:
+    if units[i] < 200:
+        low.append(i)
+    elif units[i] <= 400:
+        medium.append(i)
     else:
-        high.append(house)
+        high.append(i)
 
 print("Low Consumption:", low)
 print("Medium Consumption:", medium)
 print("High Consumption:", high)
 
-# 6. Count houses with consumption > 300
+# 6. Count houses with consumption > 300................................................................
 count = 0
-
 for i in units:
     if units[i] > 300:
         count += 1

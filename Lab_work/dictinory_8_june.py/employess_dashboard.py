@@ -45,7 +45,6 @@ print("Employees needing improvement.............:", count)
 
 # 3. Find the top performer
 top = max(performance, key=performance.get)
-
 print("Top Performer........:")
 print(top, ":", performance[top])
 
@@ -53,13 +52,13 @@ print(top, ":", performance[top])
 total = sum(performance.values())
 average = total / len(performance)
 
-print("\nAverage Performance Score:", average)
+print("Average Performance Score:", average)
 
 # 5. Separate lists
-excellent = []
-good = []
-average_list = []
-poor = []
+excellent =[]
+good =[]
+average =[]
+poor =[]
 
 for i in performance:
     score = performance[i]
@@ -69,11 +68,11 @@ for i in performance:
     elif score >= 75:
         good.append(i)
     elif score >= 60:
-        average_list.append(i)
+        average.append(i)
     else:
         poor.append(i)
 
-print("\nExcellent Employees:", excellent)
+print("Excellent Employees:", excellent)
 print("Good Employees:", good)
-print("Average Employees:", average_list)
+print("Average Employees:", average)
 print("Poor Employees:", poor)

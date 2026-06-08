@@ -54,7 +54,6 @@ print("Total Runs:", total)
 
 # 5. Players scoring below 400........................................................
 below= []
-
 for i in runs:
     if runs[i] < 400:
         below.append(i)

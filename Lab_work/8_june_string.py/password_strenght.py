@@ -17,8 +17,9 @@ u = 0
 l = 0
 d = 0
 sp = 0
-
+# list contain digit........................................
 d_list = []
+# list which contain only special charater.......................
 sp_list = []
 
 for i in password:
@@ -28,10 +29,10 @@ for i in password:
         l+= 1
     elif i.isdigit():
         d+= 1
-        d_list.append(ch)
+        d_list.append(i)
     else:
         sp += 1
-        sp_list.append(ch)
+        sp_list.append(i)
 
 # Password Strength Check
 if (len(password) >= 8 and u >= 1 and l >= 1 and d >= 1 and sp>= 1):

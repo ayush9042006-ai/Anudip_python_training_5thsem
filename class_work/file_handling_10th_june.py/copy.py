@@ -1,5 +1,8 @@
-text=open("sentence.txt","r")
-dest=open("student.txt","w")
+f1=input("enter the name of source file:")
+f2=input("enter the name of destination file:")
+
+text=open(f1,"r")
+dest=open(f2,"w")
 
 t=text.read()
 dest.write(t)

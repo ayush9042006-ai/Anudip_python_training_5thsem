@@ -12,7 +12,7 @@ Requirements Create the following functions:
 
 # Railway Reservation Seat Analyzer
 
-seats = [ "Booked", "Available", "Booked", "Booked", "Available", "Available", "Booked", "Available", "Booked", "Booked", "Available", "Booked"]
+seats = [ "Booked","Available","Booked","Booked","Available","Available","Booked","Available","Booked","Booked","Available","Booked"]
 
 #1: Count booked and available seats.........................................................
 def count_seats(seats):
@@ -40,7 +40,6 @@ def display_available_seats(seats):
         if seats[i] == "Available":
             print(i + 1, end=" ")
     print()
-
 booked, available = count_seats(seats)
 print("Booked Seats :", booked)
 print("Available Seats :", available)

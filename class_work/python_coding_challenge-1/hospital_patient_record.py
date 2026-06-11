@@ -25,7 +25,6 @@ Tasks 1. Display all patient records.
 # 1. Display all patient records
 print("all patient records")
 file = open("patients.txt", "r")
-
 for line in file:
     print(line.strip())
 
@@ -77,9 +76,7 @@ for line in file:
 
     if id == search:
         print("\nPatient Found")
-        print("Patient ID :", id)
-        print("Name :", name)
-        print("Status :", status)
+        print( id,name,status)
         found = True
         break
 file.close()

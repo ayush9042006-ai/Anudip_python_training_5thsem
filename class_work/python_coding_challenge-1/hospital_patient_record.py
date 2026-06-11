@@ -23,7 +23,7 @@ Tasks 1. Display all patient records.
 # Hospital Patient Record Management System
 
 # 1. Display all patient records
-print("ALL PATIENT RECORDS")
+print("all patient records")
 file = open("patients.txt", "r")
 
 for line in file:
@@ -32,28 +32,24 @@ for line in file:
 file.close()
 
 # 2. Display critical patients
-print("\nCRITICAL PATIENTS")
-
+print("\ncritical patients")
 file = open("patients.txt", "r")
-
 critical_list = []
 
 for line in file:
-    pid, name, status = line.strip().split(",")
+    id, name, status = line.strip().split(",")
 
     if status == "Critical":
-        print(pid, name, status)
+        print(id, name, status)
         critical_list.append(line)
 
 file.close()
-
 # 3. Count patients under each status
 normal = 0
 stable = 0
 critical = 0
 
 file = open("patients.txt", "r")
-
 for line in file:
     pid, name, status = line.strip().split(",")
 
@@ -72,25 +68,21 @@ print("Stable Patients :", stable)
 print("Critical Patients :", critical)
 
 # 4. Search patient using Patient ID
-search_id = input("\nEnter Patient ID to Search: ")
-
+search= input("\nEnter Patient ID to Search: ")
 found = False
-
 file = open("patients.txt", "r")
 
 for line in file:
-    pid, name, status = line.strip().split(",")
+    id, name, status = line.strip().split(",")
 
-    if pid == search_id:
+    if id == search:
         print("\nPatient Found")
-        print("Patient ID :", pid)
+        print("Patient ID :", id)
         print("Name :", name)
         print("Status :", status)
         found = True
         break
-
 file.close()
-
 if found == False:
     print("Patient Not Found")
 
@@ -99,7 +91,5 @@ outfile = open("critical_patients.txt", "w")
 
 for record in critical_list:
     outfile.write(record)
-
 outfile.close()
-
 print("\nCritical patient records saved successfully.")
